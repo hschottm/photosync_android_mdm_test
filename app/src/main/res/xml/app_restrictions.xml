@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<restrictions xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <restriction
+        android:key="vpp_id"
+        android:title="@string/restriction_title_vpp_id"
+        android:description="@string/restriction_description_vpp_id"
+        android:restrictionType="string"/>
+
+    <restriction
+        android:key="general_settings"
+        android:title="@string/restriction_title_general_settings"
+        android:restrictionType="bundle"
+        >
+        <restriction
+            android:key="general_theme"
+            android:title="@string/restriction_general_theme"
+            android:description="@string/restriction_general_theme_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/theme_values"
+            android:entries="@array/theme_entries"
+            />
+    </restriction>
+
+    <restriction
+        android:key="service_settings"
+        android:title="@string/restriction_service_settings"
+        android:restrictionType="bundle"
+        >
+
+        <restriction
+            android:key="settings_configure_hidden_services"
+            android:title="@string/restriction_service_settings_hidden_services"
+            android:description="@string/restriction_service_settings_hidden_services_description"
+            android:restrictionType="multi-select"
+            android:entryValues="@array/restriction_service_settings_services_values"
+            android:entries="@array/restriction_service_settings_services_entries"
+            />
+
+        <!--restriction
+            android:key="settings_configure_services_order"
+            android:title="@string/restriction_service_order_title"
+            android:description="@string/restriction_service_order_description"
+            android:restrictionType="string"
+            android:defaultValue="computer,phone,webdav,ftp,smb,amazons3,wasabi,backblaze,dropbox,photoprism,camera,googledrive,pcloud,onedrive,flickr,googlephotos,smugmug,box,usb_camera,zenfolio,canon,canvio,nikon,flashair,sony,transcend,fuji,lumix,olympus" />
+        /-->
+
+    </restriction>
+
+</restrictions>
