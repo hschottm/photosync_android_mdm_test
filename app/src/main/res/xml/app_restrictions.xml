@@ -47,4 +47,27 @@
 
     </restriction>
 
+    <restriction
+        android:key="photosync_camera"
+        android:title="@string/restriction_photosync_camera"
+        android:restrictionType="bundle"
+        >
+
+        <restriction
+            android:key="photosync_camera_photo_mode"
+            android:title="@string/restriction_photosync_camera_photo_mode"
+            android:description="@string/restriction_photosync_camera_photo_mode_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="photosync_camera_video_mode"
+            android:title="@string/restriction_photosync_camera_video_mode"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+    </restriction>
+
 </restrictions>

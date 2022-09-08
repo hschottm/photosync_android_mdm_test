@@ -134,4 +134,15 @@
         <item>Lumix</item>
         <item>Olympus</item>
     </string-array>
+
+    <string name="restriction_photosync_camera">PhotoSync Camera</string>
+
+    <string name="restriction_photosync_camera_settings">Camera settings</string>
+    <string name="restriction_photosync_camera_settings_description">Camera settings</string>
+
+    <string name="restriction_photosync_camera_photo_mode">Photo mode</string>
+    <string name="restriction_photosync_camera_photo_mode_description">Photo mode</string>
+
+    <string name="restriction_photosync_camera_video_mode">Video mode</string>
+
 </resources>
