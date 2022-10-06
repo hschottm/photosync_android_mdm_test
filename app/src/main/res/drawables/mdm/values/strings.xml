@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="restriction_vpp_id">VPP license</string>
+    <string name="restriction_vpp_id_description">License key that identifies the volume purchase</string>
+    <string name="restriction_title_general_settings">General settings</string>
+    <string name="restriction_general_theme">Theme</string>
+    <string name="restriction_general_theme_description">Select the PhotoSync display theme</string>
+    <string-array name="restriction_theme_values">
+        <item>theme_dark</item>
+        <item>theme_light</item>
+        <item>theme_default</item>
+    </string-array>
+    <string-array name="restriction_theme_entries">
+        <item>Dark</item>
+        <item>Light</item>
+        <item>System default</item>
+    </string-array>
+    <string name="restriction_service_settings">Service settings</string>
+    <string name="restriction_service_settings_hidden_services">Hidden Services</string>
+    <string name="restriction_service_settings_hidden_services_description">Select the services to be hidden in the app</string>
+    <string-array name="restriction_service_settings_services_values">
+        <item>computer</item>
+        <item>phone</item>
+        <item>webdav</item>
+        <item>ftp</item>
+        <item>smb</item>
+        <item>amazons3</item>
+        <item>wasabi</item>
+        <item>backblaze</item>
+        <item>dropbox</item>
+        <item>photoprism</item>
+        <item>camera</item>
+        <item>googledrive</item>
+        <item>pcloud</item>
+        <item>onedrive</item>
+        <item>flickr</item>
+        <item>googlephotos</item>
+        <item>smugmug</item>
+        <item>box</item>
+        <item>usb_camera</item>
+        <item>zenfolio</item>
+        <item>canon</item>
+        <item>canvio</item>
+        <item>nikon</item>
+        <item>flashair</item>
+        <item>sony</item>
+        <item>transcend</item>
+        <item>fuji</item>
+        <item>lumix</item>
+        <item>olympus</item>
+    </string-array>
+
+    <string-array name="restriction_service_settings_services_entries">
+        <item>Computer</item>
+        <item>Phone/Tablet</item>
+        <item>WebDAV</item>
+        <item>FTP</item>
+        <item>SMB</item>
+        <item>S3</item>
+        <item>Wasabi</item>
+        <item>Backblaze</item>
+        <item>Dropbox</item>
+        <item>PhotoPrism</item>
+        <item>Camera</item>
+        <item>Google Drive</item>
+        <item>pCloud</item>
+        <item>Onedrive</item>
+        <item>Flickr</item>
+        <item>Google Photos</item>
+        <item>Smugmug</item>
+        <item>Box</item>
+        <item>USB camera</item>
+        <item>Zenfolio</item>
+        <item>Canon</item>
+        <item>Toshiba Canvio</item>
+        <item>Nikon</item>
+        <item>Toshiba Flashair</item>
+        <item>Sony</item>
+        <item>Transcend WiFi SD</item>
+        <item>Fuji</item>
+        <item>Lumix</item>
+        <item>Olympus</item>
+    </string-array>
+
+    <string name="restriction_photosync_camera">PhotoSync Camera</string>
+    <string name="restriction_photosync_camera_photo_mode">Photo Mode</string>
+    <string name="restriction_photosync_camera_photo_mode_description">Take photos with the PhotoSync Camera</string>
+    <string name="restriction_photosync_camera_video_mode">Video Mode</string>
+    <string name="restriction_photosync_camera_video_mode_description">Record videos with the PhotoSync Camera</string>
+    <string name="restriction_photosync_camera_save_selection">Save photo/video mode selection</string>
+    <string name="restriction_photosync_camera_save_selection_description">Starts the camera with the last selected mode</string>
+    <string name="restriction_photosync_camera_open_without_settings">Open camera without setting selection</string>
+    <string name="restriction_photosync_camera_open_without_settings_description">Opens the camera without showing the settings screen to set the camera targets and the photo/video formats</string>
+    <string name="restriction_photosync_camera_show_grid">Show grid</string>
+    <string name="restriction_photosync_camera_show_grid_description">Toggles the grid on the camera screen</string>
+    <string name="restriction_photosync_camera_local_target">Local Transfer Target</string>
+    <string name="restriction_photosync_camera_local_target_description">Enter the name of a folder where the recordings will be saved. The first folder with the matching name will be used.</string>
+    <string name="restriction_photosync_camera_photo_format">Photo Format</string>
+    <string name="restriction_photosync_camera_photo_format_description">Select the format in which you want to save photos.</string>
+    <string-array name="restriction_camera_photo_format_values">
+        <item>jpeg</item>
+        <item>heic</item>
+        <item>raw</item>
+        <item>raw+jpeg</item>
+    </string-array>
+    <string-array name="restriction_camera_photo_format_entries">
+        <item>JPEG</item>
+        <item>HEIC</item>
+        <item>RAW</item>
+        <item>RAW + JPEG</item>
+    </string-array>
+    <string name="restriction_photosync_camera_video_format">Video Format</string>
+    <string name="restriction_photosync_camera_video_format_description">Select the format in which you want to save videos.</string>
+    <string-array name="restriction_camera_video_format_values">
+        <item>h264</item>
+    </string-array>
+    <string-array name="restriction_camera_video_format_entries">
+        <item>H.264</item>
+    </string-array>
+    <string name="restriction_photosync_camera_video_resolution">Video Resolution</string>
+    <string name="restriction_photosync_camera_video_resolution_description">Select the resolution in which you want to save videos.</string>
+    <string-array name="restriction_camera_video_resolution_values">
+        <item>480p</item>
+        <item>720p</item>
+        <item>1080p</item>
+    </string-array>
+    <string-array name="restriction_camera_video_resolution_entries">
+        <item>480p</item>
+        <item>720p</item>
+        <item>1080p</item>
+    </string-array>
+    <string name="restriction_photosync_camera_local_filename_prefix">Local filename prefix</string>
+    <string name="restriction_photosync_camera_local_filename_prefix_description">Enter a prefix for the local filenames created with PhotoSync camera.</string>
+
+</resources>

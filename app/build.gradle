@@ -11,9 +11,18 @@ android {
         minSdk 26
         targetSdk 33
         versionCode gitVersion()
-        versionName "1.0"
+        versionName "1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    sourceSets {
+        main {
+            res.srcDirs = [
+                    'src/main/res',
+                    'src/main/res/drawables/mdm'
+            ]
+        }
     }
 
     buildTypes {
@@ -32,6 +41,7 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.touchbyte.photosyncmdmtest'
 }
 
 static def gitVersion() {

@@ -3,8 +3,8 @@
 
     <restriction
         android:key="vpp_id"
-        android:title="@string/restriction_title_vpp_id"
-        android:description="@string/restriction_description_vpp_id"
+        android:title="@string/restriction_vpp_id"
+        android:description="@string/restriction_vpp_id_description"
         android:restrictionType="string"/>
 
     <restriction
@@ -17,8 +17,8 @@
             android:title="@string/restriction_general_theme"
             android:description="@string/restriction_general_theme_description"
             android:restrictionType="choice"
-            android:entryValues="@array/theme_values"
-            android:entries="@array/theme_entries"
+            android:entryValues="@array/restriction_theme_values"
+            android:entries="@array/restriction_theme_entries"
             />
     </restriction>
 
@@ -64,9 +64,74 @@
         <restriction
             android:key="photosync_camera_video_mode"
             android:title="@string/restriction_photosync_camera_video_mode"
+            android:description="@string/restriction_photosync_camera_video_mode_description"
             android:restrictionType="bool"
             android:defaultValue="true"
             />
+
+        <restriction
+            android:key="photosync_camera_save_selection"
+            android:title="@string/restriction_photosync_camera_save_selection"
+            android:description="@string/restriction_photosync_camera_save_selection_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="photosync_camera_open_without_settings"
+            android:title="@string/restriction_photosync_camera_open_without_settings"
+            android:description="@string/restriction_photosync_camera_open_without_settings_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="photosync_camera_show_grid"
+            android:title="@string/restriction_photosync_camera_show_grid"
+            android:description="@string/restriction_photosync_camera_show_grid_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="photosync_camera_local_target"
+            android:title="@string/restriction_photosync_camera_local_target"
+            android:description="@string/restriction_photosync_camera_local_target_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="photosync_camera_photo_format"
+            android:title="@string/restriction_photosync_camera_photo_format"
+            android:description="@string/restriction_photosync_camera_photo_format_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/restriction_camera_photo_format_values"
+            android:entries="@array/restriction_camera_photo_format_entries"
+            />
+
+        <restriction
+            android:key="photosync_camera_video_format"
+            android:title="@string/restriction_photosync_camera_video_format"
+            android:description="@string/restriction_photosync_camera_video_format_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/restriction_camera_video_format_values"
+            android:entries="@array/restriction_camera_video_format_entries"
+            />
+
+        <restriction
+            android:key="photosync_camera_video_resolution"
+            android:title="@string/restriction_photosync_camera_video_resolution"
+            android:description="@string/restriction_photosync_camera_video_resolution_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/restriction_camera_video_resolution_values"
+            android:entries="@array/restriction_camera_video_resolution_entries"
+            />
+
+        <restriction
+            android:key="photosync_camera_local_filename_prefix"
+            android:title="@string/restriction_photosync_camera_local_filename_prefix"
+            android:description="@string/restriction_photosync_camera_local_filename_prefix_description"
+            android:defaultValue="PhotoSync_"
+            android:restrictionType="string"/>
 
     </restriction>
 
