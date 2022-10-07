@@ -180,7 +180,7 @@
     <string name="restriction_select_before_transfer_description">When &quot;On&quot; a directory selection will be shown before a transfer starts.</string>
     <string name="restriction_file_names">Filename format</string>
     <string name="restriction_file_names_description">Select how your file names will be created on the transfer target.</string>
-    <string-array name="target_file_names_value">
+    <string-array name="target_file_names_values">
         <item>Original Name</item>
         <item>Recording Time</item>
         <item>Recording Time + Name</item>
