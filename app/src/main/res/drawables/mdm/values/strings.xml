@@ -268,14 +268,14 @@
         <item>very_high</item>
         <item>maximum</item>
     </string-array>
-    <string name="restriction_transfer_videos">Transfer Videos</string>
-    <string name="restriction_transfer_videos_description">Set to &quot;On&quot; to transfer videos, otherwise skip videos.</string>
-    <string name="restriction_transfer_whatsapp">Transfer WhatsApp Media</string>
-    <string name="restriction_transfer_whatsapp_description">Set to &quot;On&quot; to transfer WhatsApp media files, otherwise skip WhatsApp media files.</string>
-    <string name="restriction_transfer_location">Location Data (GPS)</string>
-    <string name="restriction_transfer_location_description">Set to &quot;On&quot; to keep existing GPS location data in your photos, otherwise remove GPS location data.</string>
-    <string name="restriction_transfer_media_skipped_warning">Media Skipped Warning</string>
-    <string name="restriction_transfer_media_skipped_warning_description">Set to &quot;On&quot; to show a warning dialog window when media files will be skipped based on the transfer settings.</string>
+    <string name="restriction_videos">Transfer Videos</string>
+    <string name="restriction_videos_description">Set to &quot;On&quot; to transfer videos, otherwise skip videos.</string>
+    <string name="restriction_whatsapp">Transfer WhatsApp Media</string>
+    <string name="restriction_whatsapp_description">Set to &quot;On&quot; to transfer WhatsApp media files, otherwise skip WhatsApp media files.</string>
+    <string name="restriction_location">Location Data (GPS)</string>
+    <string name="restriction_location_description">Set to &quot;On&quot; to keep existing GPS location data in your photos, otherwise remove GPS location data.</string>
+    <string name="restriction_media_skipped_warning">Media Skipped Warning</string>
+    <string name="restriction_media_skipped_warning_description">Set to &quot;On&quot; to show a warning dialog window when media files will be skipped based on the transfer settings.</string>
     <string name="restriction_computer_target_apply_settings">Apply Computer target settings</string>
     <string name="restriction_computer_target_apply_settings_description">Set to &quot;On&quot; to apply the Computer target settings on the devices..</string>
 
