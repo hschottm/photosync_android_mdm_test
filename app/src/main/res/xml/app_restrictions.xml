@@ -135,4 +135,163 @@
 
     </restriction>
 
+    <restriction
+        android:key="computer_target"
+        android:title="@string/restriction_computer_target"
+        android:restrictionType="bundle"
+        >
+
+        <restriction
+            android:key="computer_target_apply_settings"
+            android:title="@string/restriction_computer_target_apply_settings"
+            android:description="@string/restriction_computer_target_apply_settings_description"
+            android:restrictionType="bool"
+            />
+
+        <restriction
+            android:key="computer_target_create_subdirectories"
+            android:title="@string/restriction_create_subdirectories"
+            android:description="@string/restriction_create_subdirectories_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/create_subdirectories_values"
+            android:entries="@array/create_subdirectories_entries"
+            />
+
+        <restriction
+            android:key="computer_target_create_subdirectories_custom"
+            android:title="@string/restriction_create_subdirectories_custom"
+            android:description="@string/restriction_create_subdirectories_custom_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="computer_target_select_before_transfer"
+            android:title="@string/restriction_select_before_transfer"
+            android:description="@string/restriction_select_before_transfer_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="computer_target_file_names"
+            android:title="@string/restriction_file_names"
+            android:description="@string/restriction_file_names_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/target_file_names_values"
+            android:entries="@array/target_file_names_entries"
+            />
+
+        <restriction
+            android:key="computer_target_file_names_custom"
+            android:title="@string/restriction_file_names_custom"
+            android:description="@string/restriction_file_names_custom_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="computer_target_delete_after_transfer"
+            android:title="@string/restriction_delete_after_transfer"
+            android:description="@string/restriction_delete_after_transfer_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/delete_after_transfer_values"
+            android:entries="@array/delete_after_transfer_entries"
+            android:defaultValue="no"
+            />
+
+        <restriction
+            android:key="computer_target_transfer_transfer_photos"
+            android:title="@string/restriction_transfer_photos"
+            android:description="@string/restriction_transfer_photos_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="computer_target_transfer_photo_transfer_quality"
+            android:title="@string/restriction_photo_transfer_quality"
+            android:description="@string/restriction_photo_transfer_quality_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/photo_transfer_quality_values"
+            android:entries="@array/photo_transfer_quality_entries"
+            android:defaultValue="full"
+            />
+
+        <restriction
+            android:key="computer_target_transfer_auto_rotate_images"
+            android:title="@string/restriction_auto_rotate_images"
+            android:description="@string/restriction_auto_rotate_images_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="computer_target_transfer_screenshots"
+            android:title="@string/restriction_screenshots"
+            android:description="@string/restriction_screenshots_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="computer_target_transfer_raw_jpeg"
+            android:title="@string/restriction_transfer_raw_jpeg"
+            android:description="@string/restriction_transfer_raw_jpeg_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/transfer_raw_jpeg_values"
+            android:entries="@array/transfer_raw_jpeg_entries"
+            android:defaultValue="both"
+            />
+
+        <restriction
+            android:key="computer_target_transfer_heic_jpeg"
+            android:title="@string/restriction_transfer_heic_jpeg"
+            android:description="@string/restriction_transfer_heic_jpeg_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/transfer_heic_jpeg_values"
+            android:entries="@array/transfer_heic_jpeg_entries"
+            android:defaultValue="off"
+            />
+
+        <restriction
+            android:key="computer_target_transfer_jpeg_quality"
+            android:title="@string/restriction_jpeg_quality"
+            android:description="@string/restriction_jpeg_quality_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/jpeg_quality_values"
+            android:entries="@array/jpeg_quality_entries"
+            android:defaultValue="very_high"
+            />
+
+        <restriction
+            android:key="computer_target_transfer_videos"
+            android:title="@string/restriction_videos"
+            android:description="@string/restriction_videos_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="computer_target_transfer_whatsapp"
+            android:title="@string/restriction_whatsapp"
+            android:description="@string/restriction_whatsapp_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="computer_target_transfer_location"
+            android:title="@string/restriction_location"
+            android:description="@string/restriction_location_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="computer_target_transfer_media_skipped_warning"
+            android:title="@string/restriction_media_skipped_warning"
+            android:description="@string/restriction_media_skipped_warning_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+    </restriction>
+
 </restrictions>

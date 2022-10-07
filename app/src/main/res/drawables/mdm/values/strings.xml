@@ -132,4 +132,151 @@
     <string name="restriction_photosync_camera_local_filename_prefix">Local filename prefix</string>
     <string name="restriction_photosync_camera_local_filename_prefix_description">Enter a prefix for the local filenames created with PhotoSync camera.</string>
 
+    <string name="restriction_computer_target">Computer target</string>
+
+    <string name="restriction_create_subdirectories">Create Subdirectories</string>
+    <string name="restriction_create_subdirectories_description">Select a value if and how subdirectories should be created on your target.</string>
+    <string-array name="create_subdirectory_values">
+        <item>None</item>
+        <item>Device Name + Album Name</item>
+        <item>Device Name + Folder Name</item>
+        <item>Device Name</item>
+        <item>Album Name</item>
+        <item>Folder Name</item>
+        <item>File type (Photos|Videos|RAW)</item>
+        <item>File extension</item>
+        <item>Recording Date (Year + Month + Day)</item>
+        <item>Recording Date (Year + Month)</item>
+        <item>Recording Date (Month + Day)</item>
+        <item>Recording Date (Date)</item>
+        <item>Transfer Date (Year + Month + Day)</item>
+        <item>Transfer Date (Year + Month)</item>
+        <item>Transfer Date (Month + Day)</item>
+        <item>Transfer Date (Date)</item>
+        <item>Custom Format</item>
+    </string-array>
+    <string-array name="create_subdirectory_entries">
+        <item>none</item>
+        <item>%DP/%AP</item>
+        <item>%DP/%FP</item>
+        <item>%DP</item>
+        <item>%AP</item>
+        <item>%FP</item>
+        <item>%3P</item>
+        <item>%EP</item>
+        <item>%YR/%mR/%dR</item>
+        <item>%YR/%mR</item>
+        <item>%mR/%dR</item>
+        <item>%YR-%mR-%dR</item>
+        <item>%YT/%mT/%dT</item>
+        <item>%YT/%mT</item>
+        <item>%mT/%dT</item>
+        <item>%YT-%mT-%dT</item>
+        <item>custom</item>
+    </string-array>
+    <string name="restriction_create_subdirectories_custom">Custom subdirectory format</string>
+    <string name="restriction_create_subdirectories_custom_description">Optional: Only used, if &quot;Custom Format&quot; is selected for &quot;Create Subdirectories&quot;</string>
+    <string name="restriction_select_before_transfer">Select target directory before transfer</string>
+    <string name="restriction_select_before_transfer_description">When &quot;On&quot; a directory selection will be shown before a transfer starts.</string>
+    <string name="restriction_file_names">Filename format</string>
+    <string name="restriction_file_names_description">Select how your file names will be created on the transfer target.</string>
+    <string-array name="target_file_names_value">
+        <item>Original Name</item>
+        <item>Recording Time</item>
+        <item>Recording Time + Name</item>
+        <item>Custom Format</item>
+    </string-array>
+    <string-array name="target_file_names_entries">
+        <item>original</item>
+        <item>recorded</item>
+        <item>recorded_name</item>
+        <item>custom</item>
+    </string-array>
+    <string name="restriction_file_names_custom">Custom filename format</string>
+    <string name="restriction_file_names_custom_description">Optional: Only used, if &quot;Custom Format&quot; is selected for &quot;Filename Format&quot;</string>
+    <string name="restriction_delete_after_transfer">Delete After Transfer</string>
+    <string name="restriction_delete_after_transfer_description">Select what should happen with a file that was transferred successfully.</string>
+    <string-array name="delete_after_transfer_values">
+        <item>No</item>
+        <item>Photos + Videos</item>
+        <item>Photos only</item>
+        <item>Videos only</item>
+    </string-array>
+    <string-array name="delete_after_transfer_entries">
+        <item>no</item>
+        <item>photos_videos</item>
+        <item>photos</item>
+        <item>videos</item>
+    </string-array>
+    <string name="restriction_transfer_photos">Transfer Photos</string>
+    <string name="restriction_transfer_photos_description">Set to &quot;On&quot; to transfer photos, otherwise skip photos.</string>
+    <string name="restriction_photo_transfer_quality">Photo Transfer Quality</string>
+    <string name="restriction_photo_transfer_quality_description">Select the quality for your transferred photos.</string>
+    <string-array name="photo_transfer_quality_values">
+        <item>Full (Original Size)</item>
+        <item>Large (2048x2048)</item>
+        <item>Medium (1280x1280)</item>
+        <item>Small (800x800)</item>
+    </string-array>
+    <string-array name="photo_transfer_quality_entries">
+        <item>full</item>
+        <item>large</item>
+        <item>medium</item>
+        <item>small</item>
+    </string-array>
+    <string name="restriction_auto_rotate_images">Auto Rotate Images</string>
+    <string name="restriction_auto_rotate_images_description">Apply the camera orientation to photos that do not have their original size.</string>
+    <string name="restriction_screenshots">Transfer Screenshots</string>
+    <string name="restriction_screenshots_description">Set to &quot;On&quot; to transfer screenshots, otherwise skip screenshots.</string>
+    <string name="restriction_transfer_raw_jpeg">Transfer RAW+JPEG</string>
+    <string name="restriction_transfer_raw_jpeg_description">Select how you want to transfer RAW+JPEG images.</string>
+    <string-array name="transfer_raw_jpeg_values">
+        <item>Both (RAW+JPEG)</item>
+        <item>RAW only</item>
+        <item>JPEG only</item>
+    </string-array>
+    <string-array name="transfer_raw_jpeg_entries">
+        <item>both</item>
+        <item>raw</item>
+        <item>jpeg</item>
+    </string-array>
+    <string name="restriction_transfer_heic_jpeg">HEIC/HEIF -> JPEG Conversion</string>
+    <string name="restriction_transfer_heic_jpeg_description">Select how you want to transfer HEIC/HEIF images.</string>
+    <string-array name="transfer_heic_jpeg_values">
+        <item>Off</item>
+        <item>On</item>
+        <item>HEIC+JPEG</item>
+    </string-array>
+    <string-array name="transfer_heic_jpeg_entries">
+        <item>off</item>
+        <item>on</item>
+        <item>heic_jpeg</item>
+    </string-array>
+    <string name="restriction_jpeg_quality">JPEG Quality</string>
+    <string name="restriction_jpeg_quality_description">Select which JPEG quality you want for converted HEIC/HEIF images.</string>
+    <string-array name="jpeg_quality_values">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+        <item>Very High</item>
+        <item>Maximum</item>
+    </string-array>
+    <string-array name="jpeg_quality_entries">
+        <item>low</item>
+        <item>medium</item>
+        <item>high</item>
+        <item>very_high</item>
+        <item>maximum</item>
+    </string-array>
+    <string name="restriction_transfer_videos">Transfer Videos</string>
+    <string name="restriction_transfer_videos_description">Set to &quot;On&quot; to transfer videos, otherwise skip videos.</string>
+    <string name="restriction_transfer_whatsapp">Transfer WhatsApp Media</string>
+    <string name="restriction_transfer_whatsapp_description">Set to &quot;On&quot; to transfer WhatsApp media files, otherwise skip WhatsApp media files.</string>
+    <string name="restriction_transfer_location">Location Data (GPS)</string>
+    <string name="restriction_transfer_location_description">Set to &quot;On&quot; to keep existing GPS location data in your photos, otherwise remove GPS location data.</string>
+    <string name="restriction_transfer_media_skipped_warning">Media Skipped Warning</string>
+    <string name="restriction_transfer_media_skipped_warning_description">Set to &quot;On&quot; to show a warning dialog window when media files will be skipped based on the transfer settings.</string>
+    <string name="restriction_computer_target_apply_settings">Apply Computer target settings</string>
+    <string name="restriction_computer_target_apply_settings_description">Set to &quot;On&quot; to apply the Computer target settings on the devices..</string>
+
 </resources>
