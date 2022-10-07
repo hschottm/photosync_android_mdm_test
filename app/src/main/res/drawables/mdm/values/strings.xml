@@ -136,7 +136,7 @@
 
     <string name="restriction_create_subdirectories">Create Subdirectories</string>
     <string name="restriction_create_subdirectories_description">Select a value if and how subdirectories should be created on your target.</string>
-    <string-array name="create_subdirectory_values">
+    <string-array name="create_subdirectories_values">
         <item>None</item>
         <item>Device Name + Album Name</item>
         <item>Device Name + Folder Name</item>
@@ -155,7 +155,7 @@
         <item>Transfer Date (Date)</item>
         <item>Custom Format</item>
     </string-array>
-    <string-array name="create_subdirectory_entries">
+    <string-array name="create_subdirectories_entries">
         <item>none</item>
         <item>%DP/%AP</item>
         <item>%DP/%FP</item>
