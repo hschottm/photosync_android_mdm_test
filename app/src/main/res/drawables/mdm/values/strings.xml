@@ -83,6 +83,8 @@
     </string-array>
 
     <string name="restriction_photosync_camera">PhotoSync Camera</string>
+    <string name="restriction_camera_apply_settings">Apply Camera settings</string>
+    <string name="restriction_camera_apply_settings_description">Set to &quot;On&quot; to apply the Camera settings on the devices.</string>
     <string name="restriction_photosync_camera_photo_mode">Photo Mode</string>
     <string name="restriction_photosync_camera_photo_mode_description">Take photos with the PhotoSync Camera</string>
     <string name="restriction_photosync_camera_video_mode">Video Mode</string>

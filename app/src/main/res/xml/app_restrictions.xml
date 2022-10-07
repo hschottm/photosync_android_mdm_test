@@ -54,6 +54,13 @@
         >
 
         <restriction
+            android:key="camera_apply_settings"
+            android:title="@string/restriction_camera_apply_settings"
+            android:description="@string/restriction_camera_apply_settings_description"
+            android:restrictionType="bool"
+            />
+
+        <restriction
             android:key="photosync_camera_photo_mode"
             android:title="@string/restriction_photosync_camera_photo_mode"
             android:description="@string/restriction_photosync_camera_photo_mode_description"
@@ -106,6 +113,7 @@
             android:restrictionType="choice"
             android:entryValues="@array/restriction_camera_photo_format_values"
             android:entries="@array/restriction_camera_photo_format_entries"
+            android:defaultValue="jpeg"
             />
 
         <restriction
@@ -115,6 +123,7 @@
             android:restrictionType="choice"
             android:entryValues="@array/restriction_camera_video_format_values"
             android:entries="@array/restriction_camera_video_format_entries"
+            android:defaultValue="h264"
             />
 
         <restriction
@@ -124,6 +133,7 @@
             android:restrictionType="choice"
             android:entryValues="@array/restriction_camera_video_resolution_values"
             android:entries="@array/restriction_camera_video_resolution_entries"
+            android:defaultValue="1080p"
             />
 
         <restriction
@@ -131,7 +141,8 @@
             android:title="@string/restriction_photosync_camera_local_filename_prefix"
             android:description="@string/restriction_photosync_camera_local_filename_prefix_description"
             android:defaultValue="PhotoSync_"
-            android:restrictionType="string"/>
+            android:restrictionType="string"
+            />
 
     </restriction>
 
@@ -155,6 +166,7 @@
             android:restrictionType="choice"
             android:entryValues="@array/create_subdirectories_values"
             android:entries="@array/create_subdirectories_entries"
+            android:defaultValue="%DP/%FP"
             />
 
         <restriction
@@ -178,6 +190,7 @@
             android:restrictionType="choice"
             android:entryValues="@array/target_file_names_values"
             android:entries="@array/target_file_names_entries"
+            android:defaultValue="original"
             />
 
         <restriction
