@@ -93,6 +93,14 @@
             />
 
         <restriction
+            android:key="photosync_camera_app_shortcut"
+            android:title="@string/restriction_photosync_camera_app_shortcut"
+            android:description="@string/restriction_photosync_camera_app_shortcut_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
             android:key="photosync_camera_show_grid"
             android:title="@string/restriction_photosync_camera_show_grid"
             android:description="@string/restriction_photosync_camera_show_grid_description"
@@ -307,4 +315,799 @@
 
     </restriction>
 
+    <restriction
+        android:key="service_1_target"
+        android:title="@string/restriction_service_1_target"
+        android:restrictionType="bundle"
+        >
+
+        <restriction
+            android:key="service_1_target_apply_settings"
+            android:title="@string/restriction_service_1_target_apply_settings"
+            android:description="@string/restriction_service_1_target_apply_settings_description"
+            android:restrictionType="bool"
+            />
+
+        <restriction
+            android:key="service_1_title"
+            android:title="@string/restriction_service_title"
+            android:description="@string/restriction_service_title_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_1_type"
+            android:title="@string/restriction_service_type"
+            android:description="@string/restriction_service_type_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/service_type_values"
+            android:entries="@array/service_type_entries"
+            />
+
+        <restriction
+            android:key="service_1_server"
+            android:title="@string/restriction_server"
+            android:description="@string/restriction_server_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_1_login"
+            android:title="@string/restriction_login"
+            android:description="@string/restriction_login_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_1_password"
+            android:title="@string/restriction_password"
+            android:description="@string/restriction_password_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_1_directory"
+            android:title="@string/restriction_directory"
+            android:description="@string/restriction_directory_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_1_port"
+            android:title="@string/restriction_port"
+            android:description="@string/restriction_port_description"
+            android:restrictionType="integer"
+            android:defaultValue="0"
+            />
+
+        <restriction
+            android:key="service_1_ftp_server_type"
+            android:title="@string/restriction_ftp_server_type"
+            android:description="@string/restriction_ftp_server_type_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/ftp_server_type_values"
+            android:entries="@array/ftp_server_type_entries"
+            />
+
+        <restriction
+            android:key="service_1_ftp_mode"
+            android:title="@string/restriction_ftp_mode"
+            android:description="@string/restriction_ftp_mode_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/ftp_mode_values"
+            android:entries="@array/ftp_mode_entries"
+            />
+
+        <restriction
+            android:key="service_1_webdav_ssl"
+            android:title="@string/restriction_webdav_ssl"
+            android:description="@string/restriction_webdav_ssl_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_1_smb_version"
+            android:title="@string/restriction_smb_version"
+            android:description="@string/restriction_smb_version_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/smb_version_values"
+            android:entries="@array/smb_version_entries"
+            />
+
+        <restriction
+            android:key="service_1_s3_region"
+            android:title="@string/restriction_s3_region"
+            android:description="@string/restriction_s3_region_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_1_s3_optional_url"
+            android:title="@string/restriction_s3_optional_url"
+            android:description="@string/restriction_s3_optional_url_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_1_create_subdirectories"
+            android:title="@string/restriction_create_subdirectories"
+            android:description="@string/restriction_create_subdirectories_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/create_subdirectories_values"
+            android:entries="@array/create_subdirectories_entries"
+            android:defaultValue="%DP/%FP"
+            />
+
+        <restriction
+            android:key="service_1_create_subdirectories_custom"
+            android:title="@string/restriction_create_subdirectories_custom"
+            android:description="@string/restriction_create_subdirectories_custom_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_1_select_before_transfer"
+            android:title="@string/restriction_select_before_transfer"
+            android:description="@string/restriction_select_before_transfer_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_1_file_names"
+            android:title="@string/restriction_file_names"
+            android:description="@string/restriction_file_names_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/target_file_names_values"
+            android:entries="@array/target_file_names_entries"
+            android:defaultValue="original"
+            />
+
+        <restriction
+            android:key="service_1_file_names_custom"
+            android:title="@string/restriction_file_names_custom"
+            android:description="@string/restriction_file_names_custom_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_1_delete_after_transfer"
+            android:title="@string/restriction_delete_after_transfer"
+            android:description="@string/restriction_delete_after_transfer_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/delete_after_transfer_values"
+            android:entries="@array/delete_after_transfer_entries"
+            android:defaultValue="no"
+            />
+
+        <restriction
+            android:key="service_1_allow_overwrite"
+            android:title="@string/restriction_allow_overwrite"
+            android:description="@string/restriction_allow_overwrite_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_preserve_file_dates"
+            android:title="@string/restriction_preserve_file_dates"
+            android:description="@string/restriction_preserve_file_dates_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_1_temp_file"
+            android:title="@string/restriction_temp_file"
+            android:description="@string/restriction_temp_file_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_temp_file_prefix"
+            android:title="@string/restriction_temp_file_prefix"
+            android:description="@string/restriction_temp_file_prefixdescription"
+            android:restrictionType="string"
+            android:defaultValue="."
+            />
+
+        <restriction
+            android:key="service_1_quicktransfer_app_shortcut"
+            android:title="@string/restriction_quicktransfer_app_shortcut"
+            android:description="@string/restriction_quicktransfer_app_shortcut_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_1_receive_from_app_shortcut"
+            android:title="@string/restriction_receive_from_app_shortcut"
+            android:description="@string/restriction_receive_from_app_shortcut_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_1_wifi_transfer_transfer_photos"
+            android:title="@string/restriction_transfer_photos_wifi"
+            android:description="@string/restriction_transfer_photos_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_wifi_transfer_photo_transfer_quality"
+            android:title="@string/restriction_photo_transfer_quality_wifi"
+            android:description="@string/restriction_photo_transfer_quality_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/photo_transfer_quality_values"
+            android:entries="@array/photo_transfer_quality_entries"
+            android:defaultValue="full"
+            />
+
+        <restriction
+            android:key="service_1_wifi_transfer_auto_rotate_images"
+            android:title="@string/restriction_auto_rotate_images_wifi"
+            android:description="@string/restriction_auto_rotate_images_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_1_wifi_transfer_screenshots"
+            android:title="@string/restriction_screenshots_wifi"
+            android:description="@string/restriction_screenshots_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_wifi_transfer_raw_jpeg"
+            android:title="@string/restriction_transfer_raw_jpeg_wifi"
+            android:description="@string/restriction_transfer_raw_jpeg_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/transfer_raw_jpeg_values"
+            android:entries="@array/transfer_raw_jpeg_entries"
+            android:defaultValue="both"
+            />
+
+        <restriction
+            android:key="service_1_wifi_transfer_heic_jpeg"
+            android:title="@string/restriction_transfer_heic_jpeg_wifi"
+            android:description="@string/restriction_transfer_heic_jpeg_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/transfer_heic_jpeg_values"
+            android:entries="@array/transfer_heic_jpeg_entries"
+            android:defaultValue="off"
+            />
+
+        <restriction
+            android:key="service_1_wifi_transfer_jpeg_quality"
+            android:title="@string/restriction_jpeg_quality_wifi"
+            android:description="@string/restriction_jpeg_quality_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/jpeg_quality_values"
+            android:entries="@array/jpeg_quality_entries"
+            android:defaultValue="very_high"
+            />
+
+        <restriction
+            android:key="service_1_wifi_transfer_videos"
+            android:title="@string/restriction_videos_wifi"
+            android:description="@string/restriction_videos_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_wifi_transfer_whatsapp"
+            android:title="@string/restriction_whatsapp_wifi"
+            android:description="@string/restriction_whatsapp_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_wifi_transfer_location"
+            android:title="@string/restriction_location_wifi"
+            android:description="@string/restriction_location_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_wifi_transfer_media_skipped_warning"
+            android:title="@string/restriction_media_skipped_warning_wifi"
+            android:description="@string/restriction_media_skipped_warning_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_cellular_transfer_transfer_photos"
+            android:title="@string/restriction_transfer_photos_cellular"
+            android:description="@string/restriction_transfer_photos_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_cellular_transfer_photo_transfer_quality"
+            android:title="@string/restriction_photo_transfer_quality_cellular"
+            android:description="@string/restriction_photo_transfer_quality_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/photo_transfer_quality_values"
+            android:entries="@array/photo_transfer_quality_entries"
+            android:defaultValue="full"
+            />
+
+        <restriction
+            android:key="service_1_cellular_transfer_auto_rotate_images"
+            android:title="@string/restriction_auto_rotate_images_cellular"
+            android:description="@string/restriction_auto_rotate_images_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_1_cellular_transfer_screenshots"
+            android:title="@string/restriction_screenshots_cellular"
+            android:description="@string/restriction_screenshots_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_cellular_transfer_raw_jpeg"
+            android:title="@string/restriction_transfer_raw_jpeg_cellular"
+            android:description="@string/restriction_transfer_raw_jpeg_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/transfer_raw_jpeg_values"
+            android:entries="@array/transfer_raw_jpeg_entries"
+            android:defaultValue="both"
+            />
+
+        <restriction
+            android:key="service_1_cellular_transfer_heic_jpeg"
+            android:title="@string/restriction_transfer_heic_jpeg_cellular"
+            android:description="@string/restriction_transfer_heic_jpeg_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/transfer_heic_jpeg_values"
+            android:entries="@array/transfer_heic_jpeg_entries"
+            android:defaultValue="off"
+            />
+
+        <restriction
+            android:key="service_1_cellular_transfer_jpeg_quality"
+            android:title="@string/restriction_jpeg_quality_cellular"
+            android:description="@string/restriction_jpeg_quality_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/jpeg_quality_values"
+            android:entries="@array/jpeg_quality_entries"
+            android:defaultValue="very_high"
+            />
+
+        <restriction
+            android:key="service_1_cellular_transfer_videos"
+            android:title="@string/restriction_videos_cellular"
+            android:description="@string/restriction_videos_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_cellular_transfer_whatsapp"
+            android:title="@string/restriction_whatsapp_cellular"
+            android:description="@string/restriction_whatsapp_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_cellular_transfer_location"
+            android:title="@string/restriction_location_cellular"
+            android:description="@string/restriction_location_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_1_cellular_transfer_media_skipped_warning"
+            android:title="@string/restriction_media_skipped_warning_cellular"
+            android:description="@string/restriction_media_skipped_warning_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+    </restriction>
+
+    <restriction
+        android:key="service_2_target"
+        android:title="@string/restriction_service_2_target"
+        android:restrictionType="bundle"
+        >
+
+        <restriction
+            android:key="service_2_target_apply_settings"
+            android:title="@string/restriction_service_2_target_apply_settings"
+            android:description="@string/restriction_service_2_target_apply_settings_description"
+            android:restrictionType="bool"
+            />
+
+        <restriction
+            android:key="service_2_title"
+            android:title="@string/restriction_service_title"
+            android:description="@string/restriction_service_title_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_2_type"
+            android:title="@string/restriction_service_type"
+            android:description="@string/restriction_service_type_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/service_type_values"
+            android:entries="@array/service_type_entries"
+            />
+
+        <restriction
+            android:key="service_2_server"
+            android:title="@string/restriction_server"
+            android:description="@string/restriction_server_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_2_login"
+            android:title="@string/restriction_login"
+            android:description="@string/restriction_login_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_2_password"
+            android:title="@string/restriction_password"
+            android:description="@string/restriction_password_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_2_directory"
+            android:title="@string/restriction_directory"
+            android:description="@string/restriction_directory_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_2_port"
+            android:title="@string/restriction_port"
+            android:description="@string/restriction_port_description"
+            android:restrictionType="integer"
+            android:defaultValue="0"
+            />
+
+        <restriction
+            android:key="service_2_ftp_server_type"
+            android:title="@string/restriction_ftp_server_type"
+            android:description="@string/restriction_ftp_server_type_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/ftp_server_type_values"
+            android:entries="@array/ftp_server_type_entries"
+            />
+
+        <restriction
+            android:key="service_2_ftp_mode"
+            android:title="@string/restriction_ftp_mode"
+            android:description="@string/restriction_ftp_mode_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/ftp_mode_values"
+            android:entries="@array/ftp_mode_entries"
+            />
+
+        <restriction
+            android:key="service_2_webdav_ssl"
+            android:title="@string/restriction_webdav_ssl"
+            android:description="@string/restriction_webdav_ssl_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_2_smb_version"
+            android:title="@string/restriction_smb_version"
+            android:description="@string/restriction_smb_version_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/smb_version_values"
+            android:entries="@array/smb_version_entries"
+            />
+
+        <restriction
+            android:key="service_2_s3_region"
+            android:title="@string/restriction_s3_region"
+            android:description="@string/restriction_s3_region_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_2_s3_optional_url"
+            android:title="@string/restriction_s3_optional_url"
+            android:description="@string/restriction_s3_optional_url_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_2_create_subdirectories"
+            android:title="@string/restriction_create_subdirectories"
+            android:description="@string/restriction_create_subdirectories_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/create_subdirectories_values"
+            android:entries="@array/create_subdirectories_entries"
+            android:defaultValue="%DP/%FP"
+            />
+
+        <restriction
+            android:key="service_2_create_subdirectories_custom"
+            android:title="@string/restriction_create_subdirectories_custom"
+            android:description="@string/restriction_create_subdirectories_custom_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_2_select_before_transfer"
+            android:title="@string/restriction_select_before_transfer"
+            android:description="@string/restriction_select_before_transfer_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_2_file_names"
+            android:title="@string/restriction_file_names"
+            android:description="@string/restriction_file_names_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/target_file_names_values"
+            android:entries="@array/target_file_names_entries"
+            android:defaultValue="original"
+            />
+
+        <restriction
+            android:key="service_2_file_names_custom"
+            android:title="@string/restriction_file_names_custom"
+            android:description="@string/restriction_file_names_custom_description"
+            android:restrictionType="string"/>
+
+        <restriction
+            android:key="service_2_delete_after_transfer"
+            android:title="@string/restriction_delete_after_transfer"
+            android:description="@string/restriction_delete_after_transfer_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/delete_after_transfer_values"
+            android:entries="@array/delete_after_transfer_entries"
+            android:defaultValue="no"
+            />
+
+        <restriction
+            android:key="service_2_allow_overwrite"
+            android:title="@string/restriction_allow_overwrite"
+            android:description="@string/restriction_allow_overwrite_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_preserve_file_dates"
+            android:title="@string/restriction_preserve_file_dates"
+            android:description="@string/restriction_preserve_file_dates_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_2_temp_file"
+            android:title="@string/restriction_temp_file"
+            android:description="@string/restriction_temp_file_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_temp_file_prefix"
+            android:title="@string/restriction_temp_file_prefix"
+            android:description="@string/restriction_temp_file_prefixdescription"
+            android:restrictionType="string"
+            android:defaultValue="."
+            />
+
+        <restriction
+            android:key="service_2_quicktransfer_app_shortcut"
+            android:title="@string/restriction_quicktransfer_app_shortcut"
+            android:description="@string/restriction_quicktransfer_app_shortcut_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_2_receive_from_app_shortcut"
+            android:title="@string/restriction_receive_from_app_shortcut"
+            android:description="@string/restriction_receive_from_app_shortcut_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_2_wifi_transfer_transfer_photos"
+            android:title="@string/restriction_transfer_photos_wifi"
+            android:description="@string/restriction_transfer_photos_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_wifi_transfer_photo_transfer_quality"
+            android:title="@string/restriction_photo_transfer_quality_wifi"
+            android:description="@string/restriction_photo_transfer_quality_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/photo_transfer_quality_values"
+            android:entries="@array/photo_transfer_quality_entries"
+            android:defaultValue="full"
+            />
+
+        <restriction
+            android:key="service_2_wifi_transfer_auto_rotate_images"
+            android:title="@string/restriction_auto_rotate_images_wifi"
+            android:description="@string/restriction_auto_rotate_images_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_2_wifi_transfer_screenshots"
+            android:title="@string/restriction_screenshots_wifi"
+            android:description="@string/restriction_screenshots_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_wifi_transfer_raw_jpeg"
+            android:title="@string/restriction_transfer_raw_jpeg_wifi"
+            android:description="@string/restriction_transfer_raw_jpeg_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/transfer_raw_jpeg_values"
+            android:entries="@array/transfer_raw_jpeg_entries"
+            android:defaultValue="both"
+            />
+
+        <restriction
+            android:key="service_2_wifi_transfer_heic_jpeg"
+            android:title="@string/restriction_transfer_heic_jpeg_wifi"
+            android:description="@string/restriction_transfer_heic_jpeg_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/transfer_heic_jpeg_values"
+            android:entries="@array/transfer_heic_jpeg_entries"
+            android:defaultValue="off"
+            />
+
+        <restriction
+            android:key="service_2_wifi_transfer_jpeg_quality"
+            android:title="@string/restriction_jpeg_quality_wifi"
+            android:description="@string/restriction_jpeg_quality_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/jpeg_quality_values"
+            android:entries="@array/jpeg_quality_entries"
+            android:defaultValue="very_high"
+            />
+
+        <restriction
+            android:key="service_2_wifi_transfer_videos"
+            android:title="@string/restriction_videos_wifi"
+            android:description="@string/restriction_videos_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_wifi_transfer_whatsapp"
+            android:title="@string/restriction_whatsapp_wifi"
+            android:description="@string/restriction_whatsapp_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_wifi_transfer_location"
+            android:title="@string/restriction_location_wifi"
+            android:description="@string/restriction_location_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_wifi_transfer_media_skipped_warning"
+            android:title="@string/restriction_media_skipped_warning_wifi"
+            android:description="@string/restriction_media_skipped_warning_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_cellular_transfer_transfer_photos"
+            android:title="@string/restriction_transfer_photos_cellular"
+            android:description="@string/restriction_transfer_photos_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_cellular_transfer_photo_transfer_quality"
+            android:title="@string/restriction_photo_transfer_quality_cellular"
+            android:description="@string/restriction_photo_transfer_quality_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/photo_transfer_quality_values"
+            android:entries="@array/photo_transfer_quality_entries"
+            android:defaultValue="full"
+            />
+
+        <restriction
+            android:key="service_2_cellular_transfer_auto_rotate_images"
+            android:title="@string/restriction_auto_rotate_images_cellular"
+            android:description="@string/restriction_auto_rotate_images_description"
+            android:restrictionType="bool"
+            android:defaultValue="false"
+            />
+
+        <restriction
+            android:key="service_2_cellular_transfer_screenshots"
+            android:title="@string/restriction_screenshots_cellular"
+            android:description="@string/restriction_screenshots_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_cellular_transfer_raw_jpeg"
+            android:title="@string/restriction_transfer_raw_jpeg_cellular"
+            android:description="@string/restriction_transfer_raw_jpeg_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/transfer_raw_jpeg_values"
+            android:entries="@array/transfer_raw_jpeg_entries"
+            android:defaultValue="both"
+            />
+
+        <restriction
+            android:key="service_2_cellular_transfer_heic_jpeg"
+            android:title="@string/restriction_transfer_heic_jpeg_cellular"
+            android:description="@string/restriction_transfer_heic_jpeg_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/transfer_heic_jpeg_values"
+            android:entries="@array/transfer_heic_jpeg_entries"
+            android:defaultValue="off"
+            />
+
+        <restriction
+            android:key="service_2_cellular_transfer_jpeg_quality"
+            android:title="@string/restriction_jpeg_quality_cellular"
+            android:description="@string/restriction_jpeg_quality_description"
+            android:restrictionType="choice"
+            android:entryValues="@array/jpeg_quality_values"
+            android:entries="@array/jpeg_quality_entries"
+            android:defaultValue="very_high"
+            />
+
+        <restriction
+            android:key="service_2_cellular_transfer_videos"
+            android:title="@string/restriction_videos_cellular"
+            android:description="@string/restriction_videos_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_cellular_transfer_whatsapp"
+            android:title="@string/restriction_whatsapp_cellular"
+            android:description="@string/restriction_whatsapp_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_cellular_transfer_location"
+            android:title="@string/restriction_location_cellular"
+            android:description="@string/restriction_location_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+
+        <restriction
+            android:key="service_2_cellular_transfer_media_skipped_warning"
+            android:title="@string/restriction_media_skipped_warning_cellular"
+            android:description="@string/restriction_media_skipped_warning_description"
+            android:restrictionType="bool"
+            android:defaultValue="true"
+            />
+    </restriction>
 </restrictions>

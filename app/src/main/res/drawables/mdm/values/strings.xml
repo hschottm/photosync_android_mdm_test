@@ -93,6 +93,8 @@
     <string name="restriction_photosync_camera_save_selection_description">Starts the camera with the last selected mode</string>
     <string name="restriction_photosync_camera_open_without_settings">Open camera without setting selection</string>
     <string name="restriction_photosync_camera_open_without_settings_description">Opens the camera without showing the settings screen to set the camera targets and the photo/video formats</string>
+    <string name="restriction_photosync_camera_app_shortcut">Camera as app shortcut (homescreen)</string>
+    <string name="restriction_photosync_camera_app_shortcut_description">Set to &quot;On&quot; to add the camera as an app shortcut when you long-tap the app icon on your homescreen.</string>
     <string name="restriction_photosync_camera_show_grid">Show grid</string>
     <string name="restriction_photosync_camera_show_grid_description">Toggles the grid on the camera screen</string>
     <string name="restriction_photosync_camera_local_target">Local Transfer Target</string>
@@ -211,8 +213,12 @@
         <item>Videos only</item>
     </string-array>
     <string name="restriction_transfer_photos">Transfer Photos</string>
+    <string name="restriction_transfer_photos_wifi">Transfer Photos (Wi-Fi)</string>
+    <string name="restriction_transfer_photos_cellular">Transfer Photos (Cellular)</string>
     <string name="restriction_transfer_photos_description">Set to &quot;On&quot; to transfer photos, otherwise skip photos.</string>
     <string name="restriction_photo_transfer_quality">Photo Transfer Quality</string>
+    <string name="restriction_photo_transfer_quality_wifi">Photo Transfer Quality (Wi-Fi)</string>
+    <string name="restriction_photo_transfer_quality_cellular">Photo Transfer Quality (Cellular)</string>
     <string name="restriction_photo_transfer_quality_description">Select the quality for your transferred photos.</string>
     <string-array name="photo_transfer_quality_values">
         <item>full</item>
@@ -227,10 +233,16 @@
         <item>Small (800x800)</item>
     </string-array>
     <string name="restriction_auto_rotate_images">Auto Rotate Images</string>
+    <string name="restriction_auto_rotate_images_wifi">Auto Rotate Images (Wi-Fi)</string>
+    <string name="restriction_auto_rotate_images_celular">Auto Rotate Images (Cellular)</string>
     <string name="restriction_auto_rotate_images_description">Apply the camera orientation to photos that do not have their original size.</string>
     <string name="restriction_screenshots">Transfer Screenshots</string>
+    <string name="restriction_screenshots_wifi">Transfer Screenshots (Wi-Fi)</string>
+    <string name="restriction_screenshots_cellular">Transfer Screenshots (Cellular)</string>
     <string name="restriction_screenshots_description">Set to &quot;On&quot; to transfer screenshots, otherwise skip screenshots.</string>
     <string name="restriction_transfer_raw_jpeg">Transfer RAW+JPEG</string>
+    <string name="restriction_transfer_raw_jpeg_wifi">Transfer RAW+JPEG (Wi-Fi)</string>
+    <string name="restriction_transfer_raw_jpeg_cellular">Transfer RAW+JPEG (Cellular)</string>
     <string name="restriction_transfer_raw_jpeg_description">Select how you want to transfer RAW+JPEG images.</string>
     <string-array name="transfer_raw_jpeg_values">
         <item>both</item>
@@ -243,6 +255,8 @@
         <item>JPEG only</item>
     </string-array>
     <string name="restriction_transfer_heic_jpeg">HEIC/HEIF -> JPEG Conversion</string>
+    <string name="restriction_transfer_heic_jpeg_wifi">HEIC/HEIF -> JPEG Conversion (Wi-Fi)</string>
+    <string name="restriction_transfer_heic_jpeg_cellular">HEIC/HEIF -> JPEG Conversion (Cellular)</string>
     <string name="restriction_transfer_heic_jpeg_description">Select how you want to transfer HEIC/HEIF images.</string>
     <string-array name="transfer_heic_jpeg_values">
         <item>off</item>
@@ -255,6 +269,8 @@
         <item>HEIC+JPEG</item>
     </string-array>
     <string name="restriction_jpeg_quality">JPEG Quality</string>
+    <string name="restriction_jpeg_quality_wifi">JPEG Quality (Wi-Fi)</string>
+    <string name="restriction_jpeg_quality_cellular">JPEG Quality (Cellular)</string>
     <string name="restriction_jpeg_quality_description">Select which JPEG quality you want for converted HEIC/HEIF images.</string>
     <string-array name="jpeg_quality_values">
         <item>low</item>
@@ -271,14 +287,119 @@
         <item>Maximum</item>
     </string-array>
     <string name="restriction_videos">Transfer Videos</string>
+    <string name="restriction_videos_wifi">Transfer Videos (Wi-Fi)</string>
+    <string name="restriction_videos_cellular">Transfer Videos (Cellular)</string>
     <string name="restriction_videos_description">Set to &quot;On&quot; to transfer videos, otherwise skip videos.</string>
     <string name="restriction_whatsapp">Transfer WhatsApp Media</string>
+    <string name="restriction_whatsapp_wifi">Transfer WhatsApp Media (Wi-Fi)</string>
+    <string name="restriction_whatsapp_cellular">Transfer WhatsApp Media (Cellular)</string>
     <string name="restriction_whatsapp_description">Set to &quot;On&quot; to transfer WhatsApp media files, otherwise skip WhatsApp media files.</string>
     <string name="restriction_location">Location Data (GPS)</string>
+    <string name="restriction_location_wifi">Location Data (GPS) (Wi-Fi)</string>
+    <string name="restriction_location_cellular">Location Data (GPS) (Cellular)</string>
     <string name="restriction_location_description">Set to &quot;On&quot; to keep existing GPS location data in your photos, otherwise remove GPS location data.</string>
     <string name="restriction_media_skipped_warning">Media Skipped Warning</string>
+    <string name="restriction_media_skipped_warning_wifi">Media Skipped Warning (Wi-Fi)</string>
+    <string name="restriction_media_skipped_warning_cellular">Media Skipped Warning (Cellular)</string>
     <string name="restriction_media_skipped_warning_description">Set to &quot;On&quot; to show a warning dialog window when media files will be skipped based on the transfer settings.</string>
     <string name="restriction_computer_target_apply_settings">Apply Computer target settings</string>
     <string name="restriction_computer_target_apply_settings_description">Set to &quot;On&quot; to apply the Computer target settings on the devices.</string>
+
+    <string name="restriction_service_1_target">Create/Update Service 1</string>
+    <string name="restriction_service_1_target_apply_settings">Apply Service 1 target settings</string>
+    <string name="restriction_service_1_target_apply_settings_description">Set to &quot;On&quot; to apply the Service 1 target settings on the devices.</string>
+    <string name="restriction_service_2_target">Create/Update Service 2</string>
+    <string name="restriction_service_2_target_apply_settings">Apply Service 2 target settings</string>
+    <string name="restriction_service_2_target_apply_settings_description">Set to &quot;On&quot; to apply the Service 2 target settings on the devices.</string>
+    <string name="restriction_service_title">Title</string>
+    <string name="restriction_service_title_description">Use existing title to update configuration, otherwise a new one is created.</string>
+    <string name="restriction_service_type">Service Type</string>
+    <string name="restriction_service_type_description">Select the service type for the service that you want to create/update.</string>
+    <string-array name="service_type_values">
+        <item>smb</item>
+        <item>ftp</item>
+        <item>webdav</item>
+        <item>s3</item>
+        <item>wasabi</item>
+        <item>backblaze</item>
+    </string-array>
+    <string-array name="service_type_entries">
+        <item>SMB</item>
+        <item>FTP/FTPS/SFTP</item>
+        <item>WebDAV</item>
+        <item>S3</item>
+        <item>Wasabi</item>
+        <item>Backblaze</item>
+    </string-array>
+    <string name="restriction_server">Server</string>
+    <string name="restriction_server_description">Enter domain name, ip address or hostname.</string>
+    <string name="restriction_login">Login/Username/Access Key ID</string>
+    <string name="restriction_login_description">Enter your login, username, or access key ID.</string>
+    <string name="restriction_password">Password/Secret Access Key</string>
+    <string name="restriction_password_description">The password/secret access key should not be set in settings for security. The app will query for the password, if it\'s not set in settings.</string>
+    <string name="restriction_directory">Path/Network Share</string>
+    <string name="restriction_directory_description">Enter the path/network share that should be the root folder on your target.</string>
+    <string name="restriction_port">Port</string>
+    <string name="restriction_port_description">Set to &quot;0&quot; to use default port for the service.</string>
+    <string name="restriction_ftp_server_type">FTP Server Type</string>
+    <string name="restriction_ftp_server_type_description">Select the server type for an FTP service.</string>
+    <string-array name="ftp_server_type_values">
+        <item>ftp</item>
+        <item>ftps</item>
+        <item>sftp</item>
+    </string-array>
+    <string-array name="ftp_server_type_entries">
+        <item>FTP</item>
+        <item>FTPS</item>
+        <item>SFTP</item>
+    </string-array>
+    <string name="restriction_ftp_mode">FTP Mode</string>
+    <string name="restriction_ftp_mode_description">Select the mode for an FTP service.</string>
+    <string-array name="ftp_mode_values">
+        <item>automatic</item>
+        <item>active</item>
+        <item>passive</item>
+        <item>sftp</item>
+    </string-array>
+    <string-array name="ftp_mode_entries">
+        <item>Automatic</item>
+        <item>Active</item>
+        <item>Passive</item>
+        <item>SFTP</item>
+    </string-array>
+    <string name="restriction_webdav_ssl">WebDAV SSL</string>
+    <string name="restriction_webdav_ssl_description">Set to &quot;On&quot; if your WebDAV server requires a secure connection.</string>
+    <string name="restriction_smb_version">SMB Version</string>
+    <string name="restriction_smb_version_description">Select the SMB version that should be chosen for an SMB service.</string>
+    <string-array name="smb_version_values">
+        <item>automatic</item>
+        <item>smb1</item>
+        <item>smb2</item>
+        <item>smb3</item>
+        <item>smb3encrypted</item>
+    </string-array>
+    <string-array name="smb_version_entries">
+        <item>Automatic</item>
+        <item>SMB 1</item>
+        <item>SMB 2</item>
+        <item>SMB 3</item>
+        <item>SMB 3 Encrypted</item>
+    </string-array>
+    <string name="restriction_s3_region">S3/Wasabi Region</string>
+    <string name="restriction_s3_region_description">Enter S3/Wasabi region, e.g. us-east-1.</string>
+    <string name="restriction_s3_optional_url">S3 Optional API URL</string>
+    <string name="restriction_s3_optional_url_description">Enter an options API URL for an S3 compatible service that is hosted on another server.</string>
+    <string name="restriction_allow_overwrite">Allow overwrite</string>
+    <string name="restriction_allow_overwrite_description">Set to &quot;On&quot; to allow PhotoSync to overwrite files with identical names on the target, otherwise file names and file sizes will be checked.</string>
+    <string name="restriction_preserve_file_dates">Preserve file dates</string>
+    <string name="restriction_preserve_file_dates_description">Set to &quot;On&quot; to set the file modification date on the target to the recording date of the file, if possible.</string>
+    <string name="restriction_temp_file">Transfer to Temporary File</string>
+    <string name="restriction_temp_file_description">Set to &quot;On&quot; to transfer files into a temporary file on the target to prevent existing files from being overwritten and deleted in case of a canceled/incomplete transfer.</string>
+    <string name="restriction_temp_file_prefix">Temporary File Prefix</string>
+    <string name="restriction_temp_file_prefix_description">Enter a prefix for the temporary file name on the target.</string>
+    <string name="restriction_quicktransfer_app_shortcut">Service as &quot;Quick Transfer&quot; app shortcut (homescreen)</string>
+    <string name="restriction_quicktransfer_app_shortcut_description">Set to &quot;On&quot; to add the service as a &quot;Quick Transfer&quot; app shortcut when you long-tap the app icon on your homescreen.</string>
+    <string name="restriction_receive_from_app_shortcut">Service as &quot;Receive from&quot; app shortcut (homescreen)</string>
+    <string name="restriction_receive_from_app_shortcut_description">Set to &quot;On&quot; to add the service as a &quot;Receive from&quot; app shortcut when you long-tap the app icon on your homescreen.</string>
 
 </resources>
