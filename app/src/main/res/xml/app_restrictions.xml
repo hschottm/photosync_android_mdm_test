@@ -787,8 +787,8 @@
             android:title="@string/restriction_ftp_mode"
             android:description="@string/restriction_ftp_mode_description"
             android:restrictionType="choice"
-            android:entryValues="@array/ftp_mode_values"
-            android:entries="@array/ftp_mode_entries"
+            android:entryValues="@array/restriction_ftp_mode_values"
+            android:entries="@array/restriction_ftp_mode_entries"
             />
 
         <restriction
@@ -804,8 +804,8 @@
             android:title="@string/restriction_smb_version"
             android:description="@string/restriction_smb_version_description"
             android:restrictionType="choice"
-            android:entryValues="@array/smb_version_values"
-            android:entries="@array/smb_version_entries"
+            android:entryValues="@array/restriction_smb_version_values"
+            android:entries="@array/restriction_smb_version_entries"
             />
 
         <restriction

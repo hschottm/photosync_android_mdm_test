@@ -355,13 +355,13 @@
     </string-array>
     <string name="restriction_ftp_mode">FTP Mode</string>
     <string name="restriction_ftp_mode_description">Select the mode for an FTP service.</string>
-    <string-array name="ftp_mode_values">
+    <string-array name="restriction_ftp_mode_values">
         <item>automatic</item>
         <item>active</item>
         <item>passive</item>
         <item>sftp</item>
     </string-array>
-    <string-array name="ftp_mode_entries">
+    <string-array name="restriction_ftp_mode_entries">
         <item>Automatic</item>
         <item>Active</item>
         <item>Passive</item>
@@ -371,14 +371,14 @@
     <string name="restriction_webdav_ssl_description">Set to &quot;On&quot; if your WebDAV server requires a secure connection.</string>
     <string name="restriction_smb_version">SMB Version</string>
     <string name="restriction_smb_version_description">Select the SMB version that should be chosen for an SMB service.</string>
-    <string-array name="smb_version_values">
+    <string-array name="restriction_smb_version_values">
         <item>automatic</item>
         <item>smb1</item>
         <item>smb2</item>
         <item>smb3</item>
         <item>smb3encrypted</item>
     </string-array>
-    <string-array name="smb_version_entries">
+    <string-array name="restriction_smb_version_entries">
         <item>Automatic</item>
         <item>SMB 1</item>
         <item>SMB 2</item>
