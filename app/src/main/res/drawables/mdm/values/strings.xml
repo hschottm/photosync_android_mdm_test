@@ -234,7 +234,7 @@
     </string-array>
     <string name="restriction_auto_rotate_images">Auto Rotate Images</string>
     <string name="restriction_auto_rotate_images_wifi">Auto Rotate Images (Wi-Fi)</string>
-    <string name="restriction_auto_rotate_images_celular">Auto Rotate Images (Cellular)</string>
+    <string name="restriction_auto_rotate_images_cellular">Auto Rotate Images (Cellular)</string>
     <string name="restriction_auto_rotate_images_description">Apply the camera orientation to photos that do not have their original size.</string>
     <string name="restriction_screenshots">Transfer Screenshots</string>
     <string name="restriction_screenshots_wifi">Transfer Screenshots (Wi-Fi)</string>

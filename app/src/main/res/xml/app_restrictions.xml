@@ -499,7 +499,7 @@
         <restriction
             android:key="service_1_temp_file_prefix"
             android:title="@string/restriction_temp_file_prefix"
-            android:description="@string/restriction_temp_file_prefixdescription"
+            android:description="@string/restriction_temp_file_prefix_description"
             android:restrictionType="string"
             android:defaultValue="."
             />
@@ -897,7 +897,7 @@
         <restriction
             android:key="service_2_temp_file_prefix"
             android:title="@string/restriction_temp_file_prefix"
-            android:description="@string/restriction_temp_file_prefixdescription"
+            android:description="@string/restriction_temp_file_prefix_description"
             android:restrictionType="string"
             android:defaultValue="."
             />
